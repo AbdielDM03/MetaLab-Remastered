@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Arquito - 3D Architecture &amp; Interior HTML Template" name="description">
-  <meta content="Paul, Logan Cee, Mikhail Ojereliev" name="author">
-  <title>Arquito - 3D Architecture &amp; Interior HTML Template</title>
+  <meta content="MetaLab - HVAC &amp; Interior HTML Template" name="description">
+  <meta content="Abdiel Datre Munoz" name="author">
+  <title>MetaLab Industries LLC - HVAC</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400" rel="stylesheet">
   <!--CSS-->
   <link href="assets/css/icofont.min.css" rel="stylesheet">
@@ -46,12 +46,12 @@
     </symbol>
   </svg>
 </div>
-<div class="page__inner animsition">
+<div class="page__inner animsition" id="home-page">
   <header class="header header_white header_fixed ">
     <div class="header__container">
       <div class="header__wrapper container-fluid">
         <div class="header__inner">
-          <a class="logo header__logo" href="/">METALAB INDUSTRIES</a>
+           <a class="logo header__logo"> <!--<img src="img/metalab-logo-black.png" alt=""--> METALAB INDUSTRIES</a> 
           <button class="header__menu-button" type="button">
             <span class="header__menu-button-inner"></span>
           </button>
@@ -181,9 +181,9 @@
                 </div> -->
               </div>
             </li>
-            <li class="top-menu__menu-item">
+            <!-- <li class="top-menu__menu-item" id="Contact Us">
               <div class="dropdown">
-                <a class="dropdown__trigger top-menu__menu-link" href="#">Contact US</a>
+                <a class="dropdown__trigger top-menu__menu-link" href="#contact-page">Contact US</a>
                 <!-- <div class="dropdown__menu">
                   <div class="dropdown__column">
                     <div class="dropdown__item">
@@ -202,9 +202,9 @@
                       <a class="dropdown__link" href="page-404-dark.html">404</a>
                     </div>
                   </div>
-                </div> -->
+                </div> 
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -221,16 +221,16 @@
           <div class="menu-panel__locale link"></div>
         </div>
         <div class="menu-panel__menu">
-          <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link menu-panel__menu-link menu-panel__menu-link_active" data-toggle="collapse" href="#submenu1">Home</a>
-            <div class="menu-panel__menu-list collapse" id="submenu1">
+          <div class="menu-panel__menu-item" >
+            <a class="menu-panel__menu-link menu-panel__menu-link menu-panel__menu-link_active" data-toggle="collapse" href="#home-page">Home</a>
+            <div class="menu-panel__menu-list collapse">
               <div class="menu-panel__bottom-submenu">
 </div>
             </div>
           </div>
           <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed" data-toggle="collapse" href="#submenu2">Work</a>
-            <div class="menu-panel__menu-list collapse" id="submenu2">
+            <a class="menu-panel__menu-link collapsed" data-toggle="collapse" href="#about-page">About Us</a>
+            <!-- <div class="menu-panel__menu-list collapse" id="submenu2">
               <div class="menu-panel__bottom-submenu">
                 <div class="menu-panel__submenu-item">
                   <a class="menu-panel__submenu-link" href="work-grid-dark.html">Grid</a>
@@ -251,11 +251,11 @@
                   <a class="menu-panel__submenu-link" href="project-detail-panorama-dark.html">Project Detail Panorama</a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="#submenu3">News</a>
-            <div class="menu-panel__menu-list collapse" id="submenu3">
+          <div class="menu-panel__menu-item" id="Projects">
+            <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="#project-page">Projects</a>
+            <!-- <div class="menu-panel__menu-list collapse" id="submenu3">
               <div class="menu-panel__bottom-submenu">
                 <div class="menu-panel__submenu-item">
                   <a class="menu-panel__submenu-link" href="news-grid-dark.html">Grid</a>
@@ -270,11 +270,11 @@
                   <a class="menu-panel__submenu-link" href="news-single-post-dark.html">Single Post</a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="#submenu4">Page</a>
-            <div class="menu-panel__menu-list collapse" id="submenu4">
+            <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="#client-page">Clients</a>
+            <!-- <div class="menu-panel__menu-list collapse" id="submenu4">
               <div class="menu-panel__bottom-submenu">
                 <div class="menu-panel__submenu-item">
                   <a class="menu-panel__submenu-link" href="page-about-dark.html">About</a>
@@ -292,7 +292,7 @@
                   <a class="menu-panel__submenu-link" href="page-404-dark.html">404</a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="menu-panel__footer">
@@ -309,7 +309,7 @@
           </div>
           <div class="menu-panel__bottom">
             <div class="menu-panel__copyright">© 2023
-              <strong>MetaLab.</strong>
+              <strong>MetaLab Industries LLC.</strong>
               All Rights Reserved.
             </div>
             <div class="menu-panel__author">Web Developer
@@ -321,7 +321,7 @@
     </div>
   </header>
   <main>
-    <div class="studio-intro-slide" id="home-page" style="background-image: url(assets/img/hard-rock-hotel.jpg)">
+    <div class="studio-intro-slide" id="home-page" style="background-image: url(img/hero-section.jpg)">
       <div class="Background">
         <canvas class="Background-canvas"></canvas>
       </div>
@@ -334,8 +334,7 @@
               Industries
             </div>
           </div>
-          <div class="studio-intro-slide__text">This project designed &amp; building for purpose protect the ocean and exhibition. With inspired from sail, sponge and wind. Capri Ocean Musem was
-            born
+          <div class="studio-intro-slide__text">Join countless satisfied customers who trust us to create the perfect climate for their homes and businesses.
           </div>
           <!-- <a class="studio-intro-slide__link studio-intro-slide__link_inverted" href="#">See project</a> -->
         </div>
@@ -375,7 +374,7 @@
       </div>
     </div> -->
     <div class="cards-block" id="about-page">
-      <div class="cards-block__head" >
+      <div class="cards-block__head">
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-6 col-xl-5">
@@ -388,7 +387,7 @@
           </div>
         </div>
       </div>
-      <div class="cards">
+      <div class="cards" id="services-page">
         <div class="container-fluid">
           <div class="row">
             <div class="cards__item col-12 col-md-6 col-xl-3">
@@ -408,7 +407,7 @@
             </div>
             <div class="cards__item col-12 col-md-6 col-xl-3">
               <a class="cards__item-inner" href="#" style="background-image: url('img/card-image-4.jpg')">
-                <span class="cards__item-content"><span class="cards__item-index">04</span><span class="cards__item-title">Consulting</span><span class="cards__item-text">The planning and transformation of large urban areas has a decisive impact on the entire cycle of how we live, work & interact with each other</span></span>
+                <span class="cards__item-content"><span class="cards__item-index">04</span><span class="cards__item-title">Consulting</span><span class="cards__item-text">Whether you are looking to optimize your current HVAC setup or need assistance in planning a brand-new installation, MetaLab Consulting Services is your reliable partner.</span></span>
               </a>
             </div>
           </div>
@@ -1749,7 +1748,7 @@
                 data-slotamount="default"
                 data-transition="fade">
               <img alt=""
-                    src="img/home-slide-5.jpg"/>
+                    src="img/home-slide-5.png"/>
               <div class="tp-caption tp-shape tp-shapewrapper tp-slicey tp-resizeme"
                    data-frames='[{"delay":300,"speed":1000,"frame":"0","from":"rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"+3700","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                    data-height="['150','150','100','100']"
@@ -3644,7 +3643,7 @@
         </div>
       </div>
     </div>
-    <div class="collapse-block">
+    <div class="collapse-block" id="core_values-page">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-5">
@@ -3702,10 +3701,10 @@
         </div>
       </div>
     </div>
-    <div class="studio-reviews">
+    <div class="studio-reviews" id="testimonials-page">
       <div class="container">
         <div class="studio-reviews__head">
-          <div class="studio-reviews__title"># Happy clients love MetaLab</div>
+          <div class="studio-reviews__title">Testimonials</div>
         </div>
         <div class="studio-reviews__slider swiper-container">
           <div class="swiper-wrapper">
@@ -4018,23 +4017,23 @@
       </div>
     </div> -->
   </main>
-  <footer class="footer-studio footer">
+  <footer class="footer-studio footer" >
     <div class="container-fluid">
       <div class="row">
         <div class="footer-studio__column col-6 col-xl-3">
           <div class="footer-studio__group-title">Company</div>
           <ul class="footer-studio__list">
-            <li class="footer-studio__list-item">
-              <a class="footer-studio__list-link" href="#">About</a>
+            <li class="footer-studio__list-item" id="core-values">
+              <a class="footer-studio__list-link" href="#core_values-page">Core Values</a>
             </li>
             <li class="footer-studio__list-item">
-              <a class="footer-studio__list-link" href="#">Contact</a>
+              <a class="footer-studio__list-link" href="#project-page">Projects</a>
             </li>
-            <li class="footer-studio__list-item">
-              <a class="footer-studio__list-link" href="#">Career</a>
+            <li class="footer-studio__list-item" id="testimonials">
+              <a class="footer-studio__list-link" href="#testimonials-page">Testimonials</a>
             </li>
-            <li class="footer-studio__list-item">
-              <a class="footer-studio__list-link" href="#">Services</a>
+            <li class="footer-studio__list-item" id="Services">
+              <a class="footer-studio__list-link" href="#services-page">Services</a>
             </li>
           </ul>
         </div>
@@ -4157,7 +4156,7 @@
             <div class="footer-studio__copyright">© 2023
               <strong>MetaLab Industries LLC.</strong>
               All Rights Reserved | Web Developer
-              <a href="https://abdieldm-portfolio.netlify.app/">Abdiel Datre</a>
+              <a href="https://abdieldm-portfolio.netlify.app/" target="_blank"> Abdiel Datre</a>
             </div>
           </div>
           <div class="footer-studio__column col-12 col-sm-6 col-lg-3 offset-lg-3">

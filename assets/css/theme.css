@@ -3542,6 +3542,10 @@ header
   display: block;
   z-index: 3;
 }
+.header__logo img{
+ width: 30px;
+ height: 30px;
+}
 
 .header__wrapper {
   padding-top: 0;
@@ -4187,6 +4191,10 @@ logo
   text-decoration: none;
   letter-spacing: 0.2em;
   transition: all 0.3s;
+}
+.logo header__logo{
+  height: 28px;
+    width: 65px;
 }
 
 /*
