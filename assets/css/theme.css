@@ -7592,9 +7592,16 @@ team-block
 .team-block__person-name {
   font-size: 20px;
   font-weight: 600;
-  line-height: 0.714285714285714;
+  line-height: 1.2;
   margin-bottom: 9px;
   transition: 0.3s;
+}
+button.masonry__primary-filter-button.masonry__primary-filter-button_active {
+  font-family: 'Teko', Helvetica, sans-serif;
+  font-size: 50px;
+  display: block;
+  font-weight: 500;
+  padding-top: 70px;
 }
 
 .team-block__slide:hover .team-block__person-name {
