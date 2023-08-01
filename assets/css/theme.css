@@ -4510,6 +4510,7 @@ masonry-item
   transform: scale(1);
   transition: 0.5s;
   opacity: 1;
+  display: none;
 }
 
 .masonry-item__image-wrapper:hover .masonry-item__image {
@@ -7500,7 +7501,38 @@ studio-reviews
   height: 56px;
   border-radius: 100%;
 }
-
+.submitals{
+  background-color: rgb(37,37,37);
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+        margin-left: 33px;
+    margin-top: 25px;
+    list-style-type: none;
+}
+.submital{
+  background-color: rgb(37,37,37);
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+        margin-left: 117px;
+    margin-top: 25px;
+    list-style-type: none;
+}
+.submital :hover{
+  color: #999;
+  list-style-type: none;
+}
 .studio-reviews__person-name {
   font-size: 16px;
   text-transform: uppercase;
@@ -7576,7 +7608,9 @@ team-block
 .team-block__body {
   padding-bottom: 105px;
 }
-
+.cards-block__head .container{
+  padding-top: 77px;
+}
 .team-block__body_bordered {
   border-bottom: 1px solid #e0e0e0;
 }
