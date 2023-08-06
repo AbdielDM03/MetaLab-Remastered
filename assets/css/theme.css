@@ -2884,7 +2884,7 @@ footer-studio
  
 .containeremail{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: baseline;
 }
 
@@ -8641,4 +8641,7 @@ zoom-slider
   .full-screen-block__footer {
     display: none;
   }
+}
+.body-page{
+  padding-bottom: 0px;
 }
