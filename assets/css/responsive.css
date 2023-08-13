@@ -2,6 +2,7 @@
   .container {
     padding-right: 60px;
     padding-left: 60px;
+    margin-top: 26px;
   }
 
   .container-fluid {
@@ -78,6 +79,7 @@
 
   .header__menu-button_fixed {
     right: 2px;
+    margin-right: 10px;
   }
   
   .main-slide__title {
@@ -153,13 +155,19 @@
   .zoom-slider__control_next {
     right: 15px;
   }
+  /* .page .no-mobile{
+    padding-bottom: 0px;
+  } */
 }
 
 @media only screen and (max-width: 991px) {
   .article-listing-item {
     display: block;
   }
- 
+ .submital{
+  margin-right: 0px;
+  width: 55%;
+ }
   .header-fixed{
     display: none;
   }
@@ -362,6 +370,9 @@
   .zoom-slider__slider-wrapper:after {
     display: none;
   }
+  /* .page .no-mobile{
+    padding-bottom: 0px;
+  } */
 }
 
 @media only screen and (max-width: 767px) {
@@ -370,6 +381,10 @@
   }
   .row{
     justify-content: flex-start;
+  }
+  .rows{
+    justify-content: flex-start;
+    flex-direction: column;
   }
   
   .footer_fixed {
@@ -782,14 +797,26 @@
   .zoom-slider__slider:after {
     display: none;
   }
+  /* .page .no-mobile{
+    padding-bottom: 0px;
+  } */
+  .submital{
+    width: 56%;
+    margin-right: 0px;
+  }
   
 }
+
 @media  screen and (max-width: 390px) {
   .logo {
     font-size: 33px;
   }
   .row{
     justify-content: flex-start;
+  }
+  .rows{
+    justify-content: flex-start;
+    flex-direction: column;
   }
   
   .footer_fixed {
@@ -799,6 +826,27 @@
     width: 100%;
     z-index: 1;
   }
+  /* .page .no-mobile{
+    padding-bottom: 0px;
+  } */
+  .header__logo span{
+    display: none;
+  }
+  .header__menu-button{
+    margin-right: 30px;
+  }
+  .header__logo img{
+    margin-left: 15px;
+  }
+  .submital{
+    margin-right: 0px;
+    margin-left: 10px;
+    width: 100%;
+  }
+  .submitals{
+    font-size: 18px;
+    width: 93%;
+  }
 }
 @media only screen and (max-width: 575px) {
   .logo {
@@ -807,7 +855,10 @@
 .row{
   justify-content: flex-start;
 }
-
+.rows{
+  justify-content: flex-start;
+  flex-direction: column;
+}
 .footer_fixed {
   position: relative; 
   left: 0;
@@ -934,4 +985,34 @@
   .zoom-image-head__text {
     font-size: 16px;
   }
+  /* .page .no-mobile{
+    padding-bottom: 0px;
+  } */
+  .header__logo span{
+    display: none;
+  }
+  .header__menu-button{
+    margin-right: 30px;
+  }
+  .header__logo img{
+    margin-left: 15px;
+  }
+  .submital{
+    margin-right: 0px;
+    margin-left: 10px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 762px){
+  .submital{
+    width: 76%;
+    margin-left: 12px;
+  margin-right: 0px;
+}
+}
+@media screen and (max-width: 473px){
+  .submital{
+    width: 93%;
+  }
+  
 }
