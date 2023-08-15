@@ -8640,6 +8640,6 @@ zoom-slider
     display: none;
   }
 }
-.body-page{
+body .page{
   padding-bottom: 0px;
 }
