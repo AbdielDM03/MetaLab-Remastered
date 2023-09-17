@@ -772,7 +772,7 @@ cards-block
 }
 
 .cards-block__head {
-  margin-bottom: 135px;
+  margin-bottom: 65px;
 }
 
 .cards-block__title {
@@ -6998,6 +6998,7 @@ studio-filter
 
 .studio-filter {
   padding: 78px 0 41px;
+  margin-top: 50px;
 }
 
 .studio-filter__inner {
@@ -7635,7 +7636,6 @@ button.masonry__primary-filter-button.masonry__primary-filter-button_active {
   font-size: 50px;
   display: block;
   font-weight: 500;
-  padding-top: 105px;
 }
 
 .team-block__slide:hover .team-block__person-name {
