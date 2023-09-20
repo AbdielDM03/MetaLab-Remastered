@@ -772,7 +772,7 @@ cards-block
 }
 
 .cards-block__head {
-  margin-bottom: 65px;
+  margin-bottom: 124px;
 }
 
 .cards-block__title {
@@ -7729,11 +7729,11 @@ header-fixed
   flex-wrap: wrap;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-left: 390px;
+  margin-left: 362px;
 }
 
 .top-menu__menu-item:not(:last-child) {
-  margin-right: 58px;
+  margin-right: 50px;
 }
 
 .top-menu__menu-link {
