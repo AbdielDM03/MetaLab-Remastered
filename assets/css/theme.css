@@ -900,7 +900,26 @@ cards
 /*
 clients-wrapper
 */
-
+.cards__item{
+  background-image: url(/img/prefab22.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 50%;
+  top: 0;
+  left: 0;
+}
+.cards__item2{
+  background-image: url(/img/consulting1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 50%;
+  top: 0;
+  left: 0;
+}
 .clients-wrapper {
   padding: 50px 0 60px;
   background: #f4f4f4;

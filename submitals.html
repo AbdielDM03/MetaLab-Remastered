@@ -194,7 +194,7 @@
                 </li> 
                 <li class="top-menu__menu-item" id="Contact">
                   <div class="dropdown">
-                    <a class="dropdown__trigger top-menu__menu-link" href="/contact.html">Contact Us</a>
+                    <a class="dropdown__trigger top-menu__menu-link" href="/submitals.html#contact-page">Contact Us</a>
                     <!-- <div class="dropdown__menu">
                       <div class="dropdown__column">
                         <div class="dropdown__item">
@@ -236,7 +236,7 @@
             </div>
             <div class="menu-panel__menu">
               <div class="menu-panel__menu-item" >
-                <a class="menu-panel__menu-link menu-panel__menu-link menu-panel__menu-link_active" href="#home-page">Home</a>
+                <a class="menu-panel__menu-link menu-panel__menu-link menu-panel__menu-link_active" href="/index.html">Home</a>
                 <div class="menu-panel__menu-list collapse">
                   <div class="menu-panel__bottom-submenu">
     </div>
@@ -268,7 +268,7 @@
                 </div> -->
               </div>
               <div class="menu-panel__menu-item" id="gallery">
-                <a class="menu-panel__menu-link collapsed collapsed" href="#gallery-page">Gallery</a>
+                <a class="menu-panel__menu-link collapsed collapsed" href="/gallery.html">Gallery</a>
                 <!-- <div class="menu-panel__menu-list collapse" id="">
                   <div class="menu-panel__bottom-submenu">
                     <div class="menu-panel__submenu-item">
@@ -287,7 +287,7 @@
                 </div> -->
               </div>
               <div class="menu-panel__menu-item" id="Products">
-                <a class="menu-panel__menu-link collapsed collapsed"  href="#product-page">Products</a>
+                <a class="menu-panel__menu-link collapsed collapsed"  href="/products.html">Products</a>
                 <!-- <div class="menu-panel__menu-list collapse" id="submenu4">
                   <div class="menu-panel__bottom-submenu">
                     <div class="menu-panel__submenu-item">
@@ -309,7 +309,7 @@
                 </div> -->
               </div>
               <div class="menu-panel__menu-item" id="Submitals">
-                <a class="menu-panel__menu-link collapsed collapsed"  href="#submit-page">Submittals</a>
+                <a class="menu-panel__menu-link collapsed collapsed"  href="/submitals.html">Submittals</a>
                 <!-- <div class="menu-panel__menu-list collapse" id="submenu4">
                   <div class="menu-panel__bottom-submenu">
                     <div class="menu-panel__submenu-item">
@@ -331,7 +331,7 @@
                 </div> -->
               </div>
               <div class="menu-panel__menu-item" id="Contact">
-                <a class="menu-panel__menu-link collapsed collapsed"  href="/contact.html">Contact Us</a>
+                <a class="menu-panel__menu-link collapsed collapsed"  href="/submitals.html#contact-page">Contact Us</a>
                 <!-- <div class="menu-panel__menu-list collapse" id="submenu4">
                   <div class="menu-panel__bottom-submenu">
                     <div class="menu-panel__submenu-item">
@@ -396,27 +396,180 @@
           </div>
         </div>
       </div>
-      <div class="footer-studio__bottom">
-        <div class="row">
-          <div class="footer-studio__column col-12 col-sm-6">
-            <div class="footer-studio__copyright">© 2023
-              <strong>MetaLab Industries LLC.</strong>
-              All Rights Reserved | Web Developer
-              <a href="https://abdieldm-portfolio.netlify.app/" target="_blank"> Abdiel Datre</a>
+      <footer class="footer-studio footer"  id="contact-page">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="footer-studio__column col-6 col-xl-3">
+              <div class="footer-studio__group-title">Company</div>
+              <ul class="footer-studio__list">
+                <li class="footer-studio__list-item" id="core-values">
+                  <a class="footer-studio__list-link" href="/index.html#core_values-page">Core Values</a>
+                </li>
+                <li class="footer-studio__list-item">
+                  <a class="footer-studio__list-link" href="/gallery.html">Gallery</a>
+                </li>
+                <!-- <li class="footer-studio__list-item" id="testimonials">
+                  <a class="footer-studio__list-link" href="#testimonials-page">Testimonials</a>
+                </li> -->
+                <li class="footer-studio__list-item" id="Services">
+                  <a class="footer-studio__list-link" href="/index.html#services-page">Services</a>
+                </li>
+              </ul>
             </div>
+            <!-- <div class="footer-studio__column col-6 col-xl-3">
+              <div class="footer-studio__group-title">Help Center</div>
+              <ul class="footer-studio__list">
+                <li class="footer-studio__list-item">
+                  <a class="footer-studio__list-link" href="#">FAQs</a>
+                </li>
+                <li class="footer-studio__list-item">
+                  <a class="footer-studio__list-link" href="#">Term & Conditions</a>
+                </li>
+                <li class="footer-studio__list-item">
+                  <a class="footer-studio__list-link" href="#">Privacy</a>
+                </li>
+                <li class="footer-studio__list-item">
+                  <a class="footer-studio__list-link" href="#">How It Works</a>
+                </li>
+                <li class="footer-studio__list-item">
+                  <a class="footer-studio__list-link" href="#">Return</a>
+                </li>
+              </ul>
+            </div> -->
+            <div class="footer-studio__column col-12 col-sm-6 col-xl-3">
+              <div class="footer-studio__group-title">Get In Touch For Quotes</div>
+              <p> 2855 E. 11TH AVENUE, HIALEAH, FL 33013
+                <br/>
+                Miami, United States
+              </p>
+              <p>
+                jorge.metalab@gmail.com
+              </p>
+              <p>
+                orlando.metalab@gmail.com
+              </p>
+              <p>(786) 703-5939</p>
+            </div>
+            <div class="footer-studio__column col-12 col-sm-6 col-xl-3">
+              <div class="footer-container">
+                <div class="containeremail">
+         
+                 <form onsubmit="sendEmail(); reset(); return false">
+                     <h2>Send Us A Message</h2>
+                     <div class="fields">
+                       <div class="field half">
+                         <input type="text" name="name" id="name" placeholder="Name" required="">
+                       </div>
+                       <div class="field half">
+                         <input type="email" name="email" id="email" placeholder="Email" required="">
+                       </div>
+                       <div class="field half">
+                         <input type="text" name="phone" id="phone" placeholder="Phone (Optional)" optional="">
+                       </div>
+                       <div class="field">
+                         <textarea name="message" id="message" placeholder="Message" rows="2"></textarea>
+                       </div>
+                     </div>
+                     
+                      <!--<ul class="actions">
+                       <li>
+                         <input
+                           type="submit"
+                           value="Send Message"
+                           class="button primary"
+                         />
+                       </li>
+                     </ul>  -->
+                     <button type="submit">Send</button>
+                   </form>
+             </div>
+           </div>
+            </div>
+            
+            
+    
+           
+            <script>
+              const toogleButton =document.getElementById('toogle-button');
+              const naviList = document.getElementById('navi-list');
+          
+              toogleButton.addEventListener('click', () => {
+                  naviList.classList.toggle('active');
+              })
+          </script>
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+              <script>
+                  function sendEmail() {
+                    let name = document.getElementById("name").value;
+                    let email = document.getElementById("email").value;
+                    let phone = document.getElementById("phone").value;
+                    let message = document.getElementById("message").value;
+            
+                    let body =
+                      "Name: " + name + "<br/> Email: " + email + "<br/> Phone: " + phone + "<br/> Message: " + message;
+            
+                    Email.send({
+                     
+                      SecureToken: "cf8ef982-efd5-42ad-aabf-a0f868dbea30",
+                      To: "abdiel.metalab@gmail.com",
+                      From: "abdiel.dsem@gmail.com",
+                      Subject: "IMPORTANT | MetaLab Request",
+                      Body: body,
+                    }).then((message) => alert("Message Sent Succefully"));
+                  }
+                </script>
+           <div class="footer-studio__column col-6 col-xl-3">
+            <div class="footer-studio__group-title">OPERATING HOURS</div>
+            <ul class="footer-studio__list">
+              <li class="footer-studio__list-item">
+                Monday-Friday: 6AM-2:30PM
+              </li>
+              
+                <li class="footer-studio__list-item">
+                  Saturday: Closed
+                </li>
+                <li class="footer-studio__list-item">
+                  Sunday: Closed
+                </li>
+            </ul>
           </div>
-          <div class="footer-studio__column col-12 col-sm-6 col-lg-3 offset-lg-3">
-            <div class="footer-studio__socials">
-              <a class="footer-studio__social icofont-instagram" href="https://www.instagram.com/metalabflorida/" target="_blank">
-                <div class="visually-hidden">Instagram</div>
-              </a>
-              <!-- <a class="footer-studio__social icofont-linkedin" href="#" target="_blank">
-                <div class="visually-hidden">linkedin</div>
-              </a> -->
+        </div>
+            <!-- <div class="footer-studio__column col-12 col-sm-6 col-xl-3">
+              <div class="footer-studio__group-title">Send Us A Message </div>
+              <p>Subscribe and get 10% off from our furniture store</p> 
+              <form action="#" class="footer-studio__form">
+                <input class="footer-studio__input" placeholder="Enter your name..." type="text"/>
+                <input class="footer-studio__input" placeholder="Enter your email..." type="text"/>
+                <input class="footer-studio__input" placeholder="Enter your message..." type="text"/>
+                <button class="footer-studio__submit">Send
+                  <span class="footer-studio__submit-icon icon-chevron-right"></span>
+                </button>
+              </form>
+            </div> -->
+          </div>
+          <div class="footer-studio__bottom">
+            <div class="row">
+              <div class="footer-studio__column col-12 col-sm-6">
+                <div class="footer-studio__copyright">© 2023
+                  <strong>MetaLab Industries LLC.</strong>
+                  All Rights Reserved | Web Developer
+                  <a href="https://abdieldm-portfolio.netlify.app/" target="_blank"> Abdiel Datre</a>
+                </div>
+              </div>
+              <div class="footer-studio__column col-12 col-sm-6 col-lg-3 offset-lg-3">
+                <div class="footer-studio__socials">
+                  <a class="footer-studio__social icofont-instagram" href="https://www.instagram.com/metalabflorida/" target="_blank">
+                    <div class="visually-hidden">Instagram</div>
+                  </a>
+                  <!-- <a class="footer-studio__social icofont-linkedin" href="#" target="_blank">
+                    <div class="visually-hidden">linkedin</div>
+                  </a> -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
       <!--JS-->
 <script src="assets/js/polyfill.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
