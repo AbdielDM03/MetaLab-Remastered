@@ -32,9 +32,10 @@
         <link rel="manifest" href="favicons/site.webmanifest">
         
       </head>
- 
+</head>
 <body class="page" style="padding-bottom: 0px;">
-    <header class="header header_white header_fixed ">
+    <div class="page__inner animsition" id="home-page">
+      <header class="header header_white header_fixed ">
         <div class="header__container">
           <div class="header__wrapper container-fluid">
             <div class="header__inner">
@@ -192,7 +193,7 @@
                     </div>  -->
                   </div>
                 </li> 
-                <li class="top-menu__menu-item" id="Contact-Us">
+                <li class="top-menu__menu-item" id="Contact">
                   <div class="dropdown">
                     <a class="dropdown__trigger top-menu__menu-link" href="/contact.html">Contact Us</a>
                     <!-- <div class="dropdown__menu">
@@ -243,7 +244,7 @@
                 </div>
               </div>
               <div class="menu-panel__menu-item">
-                <a class="menu-panel__menu-link collapsed"  href="/index.html#about-page">About Us</a>
+                <a class="menu-panel__menu-link collapsed"  href="#about-page">About Us</a>
                 <!-- <div class="menu-panel__menu-list collapse" id="submenu2">
                   <div class="menu-panel__bottom-submenu">
                     <div class="menu-panel__submenu-item">
@@ -268,7 +269,7 @@
                 </div> -->
               </div>
               <div class="menu-panel__menu-item" id="gallery">
-                <a class="menu-panel__menu-link collapsed collapsed" href="#gallery-page">Gallery</a>
+                <a class="menu-panel__menu-link collapsed collapsed" href="/gallery.html">Gallery</a>
                 <!-- <div class="menu-panel__menu-list collapse" id="">
                   <div class="menu-panel__bottom-submenu">
                     <div class="menu-panel__submenu-item">
@@ -375,182 +376,183 @@
           </div>
         </div>
       </header>
-      <div class="cards-block__head">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6 col-xl-3">
-              <div class="cards-block__title">Our Products</div>
-            </div>
-            <div class="col-12 col-lg-7 offset-xl-1">
-              <div class="cards-block__text">With a focus on delivering excellence, we proudly present our diverse array of offerings categorized into two main branches: Sheet Metal Products and Engineering Products.We are committed to providing top-tier products that redefine comfort and efficiency, setting new industry standards. Explore our offerings and let us take your HVAC experience to the next level.
+      <main>
+       
+        <footer class="footer-studio footer"  id="contact">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="footer-studio__column col-6 col-xl-3">
+                <div class="footer-studio__group-title">Company</div>
+                <ul class="footer-studio__list">
+                  <li class="footer-studio__list-item" id="core-values">
+                    <a class="footer-studio__list-link" href="/index.html#core_values-page">Core Values</a>
+                  </li>
+                  <li class="footer-studio__list-item">
+                    <a class="footer-studio__list-link" href="/gallery.html">Gallery</a>
+                  </li>
+                  <!-- <li class="footer-studio__list-item" id="testimonials">
+                    <a class="footer-studio__list-link" href="#testimonials-page">Testimonials</a>
+                  </li> -->
+                  <li class="footer-studio__list-item" id="Services">
+                    <a class="footer-studio__list-link" href="/index.html#services-page">Services</a>
+                  </li>
+                </ul>
               </div>
+              <!-- <div class="footer-studio__column col-6 col-xl-3">
+                <div class="footer-studio__group-title">Help Center</div>
+                <ul class="footer-studio__list">
+                  <li class="footer-studio__list-item">
+                    <a class="footer-studio__list-link" href="#">FAQs</a>
+                  </li>
+                  <li class="footer-studio__list-item">
+                    <a class="footer-studio__list-link" href="#">Term & Conditions</a>
+                  </li>
+                  <li class="footer-studio__list-item">
+                    <a class="footer-studio__list-link" href="#">Privacy</a>
+                  </li>
+                  <li class="footer-studio__list-item">
+                    <a class="footer-studio__list-link" href="#">How It Works</a>
+                  </li>
+                  <li class="footer-studio__list-item">
+                    <a class="footer-studio__list-link" href="#">Return</a>
+                  </li>
+                </ul>
+              </div> -->
+              <div class="footer-studio__column col-12 col-sm-6 col-xl-3">
+                <div class="footer-studio__group-title">Get In Touch For Quotes</div>
+                <p> 2855 E. 11TH AVENUE, HIALEAH, FL 33013
+                  <br/>
+                  Miami, United States
+                </p>
+                <p>
+                  jorge.metalab@gmail.com
+                </p>
+                <p>
+                  orlando.metalab@gmail.com
+                </p>
+                <p>(786) 703-5939</p>
+              </div>
+              <div class="footer-studio__column col-12 col-sm-6 col-xl-3">
+                <div class="footer-container">
+                  <div class="containeremail">
+           
+                   <form onsubmit="sendEmail(); reset(); return false">
+                       <h2>Send Us A Message</h2>
+                       <div class="fields">
+                         <div class="field half">
+                           <input type="text" name="name" id="name" placeholder="Name" required="">
+                         </div>
+                         <div class="field half">
+                           <input type="email" name="email" id="email" placeholder="Email" required="">
+                         </div>
+                         <div class="field half">
+                           <input type="text" name="phone" id="phone" placeholder="Phone (Optional)" optional="">
+                         </div>
+                         <div class="field">
+                           <textarea name="message" id="message" placeholder="Message" rows="2"></textarea>
+                         </div>
+                       </div>
+                       
+                        <!--<ul class="actions">
+                         <li>
+                           <input
+                             type="submit"
+                             value="Send Message"
+                             class="button primary"
+                           />
+                         </li>
+                       </ul>  -->
+                       <button type="submit">Send</button>
+                     </form>
+               </div>
+             </div>
+              </div>
+              
+              
+      
+             
+              <script>
+                const toogleButton =document.getElementById('toogle-button');
+                const naviList = document.getElementById('navi-list');
+            
+                toogleButton.addEventListener('click', () => {
+                    naviList.classList.toggle('active');
+                })
+            </script>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                    function sendEmail() {
+                      let name = document.getElementById("name").value;
+                      let email = document.getElementById("email").value;
+                      let phone = document.getElementById("phone").value;
+                      let message = document.getElementById("message").value;
+              
+                      let body =
+                        "Name: " + name + "<br/> Email: " + email + "<br/> Phone: " + phone + "<br/> Message: " + message;
+              
+                      Email.send({
+                       
+                        SecureToken: "cf8ef982-efd5-42ad-aabf-a0f868dbea30",
+                        To: "abdiel.metalab@gmail.com",
+                        From: "abdiel.dsem@gmail.com",
+                        Subject: "IMPORTANT | MetaLab Request",
+                        Body: body,
+                      }).then((message) => alert("Message Sent Succefully"));
+                    }
+                  </script>
+             <div class="footer-studio__column col-6 col-xl-3">
+              <div class="footer-studio__group-title">OPERATING HOURS</div>
+              <ul class="footer-studio__list">
+                <li class="footer-studio__list-item">
+                  Monday-Friday: 6AM-2:30PM
+                </li>
+                
+                  <li class="footer-studio__list-item">
+                    Saturday: Closed
+                  </li>
+                  <li class="footer-studio__list-item">
+                    Sunday: Closed
+                  </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
-    <div class="container" id="product-page">
-        <div class="masonry-block__head">
-          <div class="masonry__primary-filters"><button type="button" data-tab-button="category" class="masonry__primary-filter-button masonry__primary-filter-button_active">Sheetmetal Products</button></div>
-          <div class="masonry__secondary-filters-wrapper">
-            <!-- <div data-tab-group="category" class="masonry__secondary-filters masonry__secondary-filters_active"><button type="button" data-filter="*" class="masonry__secondary-filter-button masonry__secondary-filter-button_active">All</button><button type="button" data-filter="Ducts" class="masonry__secondary-filter-button">Ducts</button><button type="button" data-filter="Piping" class="masonry__secondary-filter-button">Piping</button></div>
-            <div data-tab-group="time" style="display: none" class="masonry__secondary-filters"><button type="button" data-filter="*" class="masonry__secondary-filter-button">All</button><button type="button" data-filter="August" class="masonry__secondary-filter-button">August</button><button type="button" data-filter="July" class="masonry__secondary-filter-button">July</button><button type="button" data-filter="June" class="masonry__secondary-filter-button">June</button><button type="button" data-filter="November" class="masonry__secondary-filter-button">November</button><button type="button" data-filter="October" class="masonry__secondary-filter-button">October</button><button type="button" data-filter="September" class="masonry__secondary-filter-button">September</button></div>
-            <div data-tab-group="program" style="display: none" class="masonry__secondary-filters"><button type="button" data-filter="*" class="masonry__secondary-filter-button">All</button><button type="button" data-filter="Commercial" class="masonry__secondary-filter-button">Commercial</button><button type="button" data-filter="Cultural" class="masonry__secondary-filter-button">Cultural</button><button type="button" data-filter="Educational" class="masonry__secondary-filter-button">Educational</button><button type="button" data-filter="Housing" class="masonry__secondary-filter-button">Housing</button><button type="button" data-filter="Public" class="masonry__secondary-filter-button">Public</button></div>
-          </div>
-        </div> -->
-        <div class="masonry__grid masonry-block__grid row">
-          
-          <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><div href="#" class="masonry-item" data-filters="Ducts, Industrial Design, 3d Modeling, August, Commercial">
-              <div class="masonry-item__image-wrapper"><img src="img/products/black-iron.JPG" alt="" class="masonry-item__image" /></div><span class="masonry-item__title">Black Iron Ductwork </span>for Kitchen Exhaust<span class="masonry-item__category"></span>
-          </div></div>
-          <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><div href="#" class="masonry-item" data-filters="Ducts, Industrial Design, June, Cultural">
-              <div class="masonry-item__image-wrapper"><img src="img/products/stainless-steel.jpg" alt="" class="masonry-item__image" /></div><span class="masonry-item__title">Stainless Steel Ductwork</span>for Fum Hood Exhaust<span class="masonry-item__category"></span>
-          </div></div>
-          <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><div href="#" class="masonry-item" data-filters="Piping, Industrial Design, June, Educational">
-              <div class="masonry-item__image-wrapper"><img src="img/products/galvanized.jpg" alt="" class="masonry-item__image" /></div><span class="masonry-item__title">Galvanized Ductwork</span>Supply/Exhaust/Return<span class="masonry-item__category"></span>
-          </div></div>
-          <div class="masonry__item masonry-block__item-block col-12 col-sm-6 col-lg-4"><div href="#" class="masonry-item" data-filters="Ducts, 3d Modeling, July, Cultural">
-            <div class="masonry-item__image-wrapper"><img src="img/new/ductwork.jpg" alt="" class="masonry-item__image" /></div><span class="masonry-item__title">Aluminium Ductwork</span>for Dishwasher Exhaust<span class="masonry-item__category"></span>
-        </div></div>
-        </div> 
-        <div class="masonry-block__head">
-          <div class="masonry__primary-filters"><button type="button" data-tab-button="category" class="masonry__primary-filter-button masonry__primary-filter-button_active">Engineering Products</button></div>
-          <!-- <div class="masonry__secondary-filters-wrapper">
-            <div data-tab-group="category" class="masonry__secondary-filters masonry__secondary-filters_active"><button type="button" data-filter="*" class="masonry__secondary-filter-button masonry__secondary-filter-button_active">All</button><button type="button" data-filter="Ducts" class="masonry__secondary-filter-button">Ducts</button><button type="button" data-filter="Piping" class="masonry__secondary-filter-button">Piping</button></div>
-            <div data-tab-group="time" style="display: none" class="masonry__secondary-filters"><button type="button" data-filter="*" class="masonry__secondary-filter-button">All</button><button type="button" data-filter="August" class="masonry__secondary-filter-button">August</button><button type="button" data-filter="July" class="masonry__secondary-filter-button">July</button><button type="button" data-filter="June" class="masonry__secondary-filter-button">June</button><button type="button" data-filter="November" class="masonry__secondary-filter-button">November</button><button type="button" data-filter="October" class="masonry__secondary-filter-button">October</button><button type="button" data-filter="September" class="masonry__secondary-filter-button">September</button></div>
-            <div data-tab-group="program" style="display: none" class="masonry__secondary-filters"><button type="button" data-filter="*" class="masonry__secondary-filter-button">All</button><button type="button" data-filter="Commercial" class="masonry__secondary-filter-button">Commercial</button><button type="button" data-filter="Cultural" class="masonry__secondary-filter-button">Cultural</button><button type="button" data-filter="Educational" class="masonry__secondary-filter-button">Educational</button><button type="button" data-filter="Housing" class="masonry__secondary-filter-button">Housing</button><button type="button" data-filter="Public" class="masonry__secondary-filter-button">Public</button></div>
-          </div>
-        </div> -->
-        <div class="masonry__grid masonry-block__grid row">
-          <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><div href="#" class="masonry-item" data-filters="Ducts, August, Commercial">
-              <div class="masonry-item__image-wrapper"><img src="img/products/aluminium-stands.jpg" alt="" class="masonry-item__image" /></div><span class="masonry-item__title">Aluminium Stands</span><span class="masonry-item__category"></span>
-          </div></div>
-          <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><div href="#" class="masonry-item" data-filters="Ducts, Industrial Design, 3d Modeling, August, Commercial">
-              <div class="masonry-item__image-wrapper"><img src="img/products/roof-pipe-supports.JPG" alt="" class="masonry-item__image" /></div><span class="masonry-item__title">Roof Pipe Suports</span><span class="masonry-item__category"></span>
-          </div></div>
-          <div class="masonry__item masonry-block__item-block col-12 col-sm-6 col-lg-4"><div href="#" class="masonry-item" data-filters="Ducts, 3d Modeling, July, Cultural">
-              <div class="masonry-item__image-wrapper"><img src="img/new/1.jpg" alt="" class="masonry-item__image" /></div><span class="masonry-item__title">Aluminium & Galvanized Ducts Supports</span><span class="masonry-item__category"></span>
-          </div></div>
-          <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><div href="#" class="masonry-item" data-filters="Ducts, Industrial Design, June, Cultural">
-              <div class="masonry-item__image-wrapper"><img src="img/p/1.jpg" alt="" class="masonry-item__image" /></div><span class="masonry-item__title">Roof Curbs</span><span class="masonry-item__category"></span>
-          </div></div>
-          
-          <!-- <div class="masonry__item masonry-block__item col-12 col-sm-6 col-lg-4"><a href="#" class="masonry-item" data-filters="3D Modeling, Piping, November, Housing">
-              <div class="masonry-item__image-wrapper"><img src="img/home-minimal-image-6.jpg" alt="" class="masonry-item__image" /></div><span class="masonry-item__title">Engineering Roof Pipe Supports Stands</span><span class="masonry-item__category">3D Modeling, Piping</span>
-            </a></div> -->
-          
-        </div>
-        
-        <!-- <div class="studio-reviews" id="testimonials-page">
-        <div class="container">
-          <div class="studio-reviews__head">
-            <div class="studio-reviews__title">Testimonials</div>
-          </div>
-          <div class="studio-reviews__slider swiper-container">
-            <div class="swiper-wrapper">
-              <div class="studio-reviews__review swiper-slide">
-                <div class="studio-reviews__review-status">Execellent -
-                  <div class="studio-reviews__review-stars">
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
+              <!-- <div class="footer-studio__column col-12 col-sm-6 col-xl-3">
+                <div class="footer-studio__group-title">Send Us A Message </div>
+                <p>Subscribe and get 10% off from our furniture store</p> 
+                <form action="#" class="footer-studio__form">
+                  <input class="footer-studio__input" placeholder="Enter your name..." type="text"/>
+                  <input class="footer-studio__input" placeholder="Enter your email..." type="text"/>
+                  <input class="footer-studio__input" placeholder="Enter your message..." type="text"/>
+                  <button class="footer-studio__submit">Send
+                    <span class="footer-studio__submit-icon icon-chevron-right"></span>
+                  </button>
+                </form>
+              </div> -->
+            </div>
+            <div class="footer-studio__bottom">
+              <div class="row">
+                <div class="footer-studio__column col-12 col-sm-6">
+                  <div class="footer-studio__copyright">© 2023
+                    <strong>MetaLab Industries LLC.</strong>
+                    All Rights Reserved | Web Developer
+                    <a href="https://abdieldm-portfolio.netlify.app/" target="_blank"> Abdiel Datre</a>
                   </div>
                 </div>
-                <div class="studio-reviews__review-text">"We've been very pleased with our experience working with MetaLab. Their team was incredibly helpful in helping us find theperfect developer for
-                  our project. The work was stellar, the communication was excellent and we couldn't have been happier with the overall experience. We're excited to work with MetaLab for more projects
-                  in the future!"
-                </div>
-              </div>
-              <div class="studio-reviews__review swiper-slide">
-                <div class="studio-reviews__review-status">Execellent -
-                  <div class="studio-reviews__review-stars">
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    
+                <div class="footer-studio__column col-12 col-sm-6 col-lg-3 offset-lg-3">
+                  <div class="footer-studio__socials">
+                    <a class="footer-studio__social icofont-instagram" href="https://www.instagram.com/metalabflorida/" target="_blank">
+                      <div class="visually-hidden">Instagram</div>
+                    </a>
+                    <!-- <a class="footer-studio__social icofont-linkedin" href="#" target="_blank">
+                      <div class="visually-hidden">linkedin</div>
+                    </a> -->
                   </div>
                 </div>
-                <div class="studio-reviews__review-text">"We've been very pleased with our experience working with MetaLab. Their team was incredibly helpful in helping us find theperfect developer for
-                  our project. The work was stellar, the communication was excellent and we couldn't have been happier with the overall experience. We're excited to work with MetaLab for more projects
-                  in the future!"
-                </div>
-              </div>
-              <div class="studio-reviews__review swiper-slide">
-                <div class="studio-reviews__review-status">Execellent -
-                  <div class="studio-reviews__review-stars">
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                    <div class="studio-reviews__review-star icofont-star"></div>
-                   
-                  </div>
-                </div>
-                <div class="studio-reviews__review-text">"We've been very pleased with our experience working with MetaLab. Their team was incredibly helpful in helping us find theperfect developer for
-                  our project. The work was stellar, the communication was excellent and we couldn't have been happier with the overall experience. We're excited to work with MetaLab for more projects
-                  in the future!"
-                </div>
               </div>
             </div>
           </div>
-          <div class="studio-reviews__buttons swiper-container">
-            <div class="swiper-wrapper">
-              <div class="studio-reviews__person studio-reviews__person_active swiper-slide">
-                <div class="studio-reviews__person-image">
-                  <img alt="" src="img/studio-review-person-1.jpg"/>
-                </div>
-                <div class="studio-reviews__person-name">Robert Downer</div>
-                <div class="studio-reviews__person-role">Contract Manager at MDC
-                   <a href="https://www.mdc.edu/" target="_blank">MDC</a> 
-                </div>
-              </div>
-              <div class="studio-reviews__person swiper-slide">
-                <div class="studio-reviews__person-image">
-                  <img alt="" src="img/studio-review-person-2.jpg"/>
-                </div>
-                <div class="studio-reviews__person-name">Natalie noyes</div>
-                <div class="studio-reviews__person-role">Managerment Product at FIU
-                   <a href="https://www.fiu.edu/" target="_blank">FIU</a> 
-                </div>
-              </div>
-              <div class="studio-reviews__person swiper-slide">
-                <div class="studio-reviews__person-image">
-                  <img alt="" src="img/studio-review-person-3.jpg"/>
-                </div>
-                <div class="studio-reviews__person-name">Christ Evan</div>
-                <div class="studio-reviews__person-role">Senior Visual Product Designer at FocusLab
-                   <a href="#">FocusLabs</a> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div class="footer-studio__bottom">
-        <div class="row">
-          <div class="footer-studio__column col-12 col-sm-6">
-            <div class="footer-studio__copyright">© 2023
-              <strong>MetaLab Industries LLC.</strong>
-              All Rights Reserved | Web Developer
-              <a href="https://abdieldm-portfolio.netlify.app/" target="_blank"> Abdiel Datre</a>
-            </div>
-          </div>
-          <div class="footer-studio__column col-12 col-sm-6 col-lg-3 offset-lg-3">
-            <div class="footer-studio__socials">
-              <a class="footer-studio__social icofont-instagram" href="https://www.instagram.com/metalabflorida/" target="_blank">
-                <div class="visually-hidden">Instagram</div>
-              </a>
-              <!-- <a class="footer-studio__social icofont-linkedin" href="#" target="_blank">
-                <div class="visually-hidden">linkedin</div>
-              </a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--JS-->
+        </footer>
+    <!--JS-->
 <script src="assets/js/polyfill.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.viewport.min.js"></script>

@@ -4,7 +4,7 @@
     padding-left: 60px;
     margin-top: 26px;
   }
-
+ 
   .container-fluid {
     padding-right: 60px;
     padding-left: 60px;
@@ -18,17 +18,21 @@
   .header__menu-button{
     display: none;
   }
+ 
+
 }
 
 @media only screen and (max-width: 1629px) {
   .cards__item-inner {
     padding: 35px 35px;
   }
+  
 }
 @media  screen (max-width: 1194px) {
   .header__menu-button{
     display: none;
   }
+  
   
 }
 
@@ -36,6 +40,7 @@
   .header-full-page {
     display: none;
   }
+  
 
 }
 
